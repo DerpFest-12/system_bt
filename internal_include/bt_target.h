@@ -273,6 +273,12 @@
 #define ESCO_TRANSPORT_UNIT_SIZE 0x00
 #endif
 
+/*  This is used to work around a controller bug that report supporting
+ *  enhanced synchronous commands */
+#ifndef BTM_SCO_ENHANCED_SYNC_ENABLED
+#define BTM_SCO_ENHANCED_SYNC_ENABLED TRUE
+#endif
+
 /**************************
  * Initial SCO TX credit
  ************************/
